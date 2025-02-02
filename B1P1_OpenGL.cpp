@@ -96,6 +96,7 @@ int main()
     Model speakersModel("model/speakers/scene.obj");
     Model charModel("model/character/scene.obj");
     Model djModel("model/dj/scene.obj");
+    Model dronModel("model/dron/scene.obj");
 
     //Model ourModel("model/backpack/backpack.obj");
 
@@ -124,10 +125,10 @@ int main()
 
     glm::vec3 ligthPos[5];
     ligthPos[0] = glm::vec3(1.2f, 1.0f, 2.0f);
-    ligthPos[1] = glm::vec3(3.0f, 2.0f, 0.0f);
+    ligthPos[1] = glm::vec3(3.0f, 2.0f, -2.0f);
     ligthPos[2] = glm::vec3(2.0f, 2.5f, 2.0f);
-    ligthPos[3] = glm::vec3(0.0f, 3.0f, 3.0f);
-    ligthPos[4] = glm::vec3(3.0f, 1.5f, 3.0f);
+    ligthPos[3] = glm::vec3(0.0f, 3.0f, -3.0f);
+    ligthPos[4] = glm::vec3(-3.0f, 1.5f, 3.0f);
 
 
     // draw in wireframe
@@ -177,7 +178,9 @@ int main()
         // Pasar las luces al shader
         for (int i = 0; i < 5; i++) {
             float angle = currentFrame * lightMovementSpeed;
-            lights[i].direction = glm::vec3(sin(angle), -1.0f, cos(angle));
+            float radius = 1.0f;
+            lights[i].position = glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle));
+            lights[i].direction = glm::vec3(sin(angle), 0.0f, cos(angle));
             std::string index = std::to_string(i);
             ourShader.setVec3("lights[" + index + "].position", lights[i].position);
             ourShader.setVec3("lights[" + index + "].direction", lights[i].direction);
@@ -282,6 +285,49 @@ int main()
         ourShader.setMat4("model", model8);
         djModel.Draw(ourShader);
 
+        // Renderizar la dron (dron)
+        float radius = 1.0f;
+        float angle = currentFrame * lightMovementSpeed;
+
+        glm::mat4 model9 = glm::mat4(1.0f);
+        model9 = glm::translate(model9, glm::vec3(1.2f, 1.0f, 2.0f)); // Nueva posición
+        model9 = glm::scale(model9, glm::vec3(0.05f, 0.05f, 0.05f));  // Mismo escalado
+        model9 = glm::rotate(model9, angle, glm::vec3(sin(angle), -1.0f, cos(angle)));
+        model9 = glm::translate(model9, glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle)));
+        ourShader.setMat4("model", model9);
+        dronModel.Draw(ourShader);
+
+        glm::mat4 model10 = glm::mat4(1.0f);
+        model10 = glm::translate(model10, glm::vec3(3.0f, 2.0f, -2.0f)); // Nueva posición
+        model10 = glm::scale(model10, glm::vec3(0.05f, 0.05f, 0.05f));  // Mismo escalado
+        model10 = glm::rotate(model10, angle, glm::vec3(sin(angle), -1.0f, cos(angle)));
+        model10 = glm::translate(model10, glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle)));
+        ourShader.setMat4("model", model10);
+        dronModel.Draw(ourShader);
+
+        glm::mat4 model11 = glm::mat4(1.0f);
+        model11 = glm::translate(model11, glm::vec3(2.0f, 2.5f, 2.0f)); // Nueva posición
+        model11 = glm::scale(model11, glm::vec3(0.05f, 0.05f, 0.05f));  // Mismo escalado
+        model11 = glm::rotate(model11, angle, glm::vec3(sin(angle), -1.0f, cos(angle)));
+        model11 = glm::translate(model11, glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle)));
+        ourShader.setMat4("model", model11);
+        dronModel.Draw(ourShader);
+
+        glm::mat4 model12 = glm::mat4(1.0f);
+        model12 = glm::translate(model12, glm::vec3(0.0f, 3.0f, -3.0)); // Nueva posición
+        model12 = glm::scale(model12, glm::vec3(0.05f, 0.05f, 0.05f));  // Mismo escalado
+        model12 = glm::rotate(model12, angle, glm::vec3(sin(angle), -1.0f, cos(angle)));
+        model12 = glm::translate(model12, glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle)));
+        ourShader.setMat4("model", model12);
+        dronModel.Draw(ourShader);
+
+        glm::mat4 model13 = glm::mat4(1.0f);
+        model13 = glm::translate(model13, glm::vec3(-3.0f, 1.5f, 3.0)); // Nueva posición
+        model13 = glm::scale(model13, glm::vec3(0.05f, 0.05f, 0.05f));  // Mismo escalado
+        model13 = glm::rotate(model13, angle, glm::vec3(sin(angle), -1.0f, cos(angle)));
+        model13 = glm::translate(model13, glm::vec3(radius * cos(angle), 2.0f, radius * sin(angle)));
+        ourShader.setMat4("model", model13);
+        dronModel.Draw(ourShader);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
