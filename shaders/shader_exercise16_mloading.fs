@@ -78,5 +78,5 @@ void main()
         // Sumar los resultados de todas las luces para la luz dinámica
         result += ambientCam + diffuseCam + specularCam;
     }
-    FragColor = mix(texture(texture_diffuse1, TexCoords)* 1.2, vec4(result, 1.0),4.0);
+    FragColor = mix(texture(texture_diffuse1, TexCoords)* 1.5, vec4(result, 1.0),4.0);
 }
