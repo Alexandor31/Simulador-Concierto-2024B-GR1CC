@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stereo Speakers
+* source:	https://sketchfab.com/3d-models/stereo-speakers-f7d5399fef1744b28a503f59437db29d
+* author:	jimbogies (https://sketchfab.com/jimbogies)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stereo Speakers" (https://sketchfab.com/3d-models/stereo-speakers-f7d5399fef1744b28a503f59437db29d) by jimbogies (https://sketchfab.com/jimbogies) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
