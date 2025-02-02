@@ -1,0 +1,124 @@
+# Blender 4.3.1 MTL File: 'None'
+# www.blender.org
+
+newmtl MTL_01
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/MTL_01_baseColor.png
+map_Bump -bm 1.000000 textures/MTL_01_normal.png
+
+newmtl MTL_02
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/MTL_02_baseColor.png
+map_Bump -bm 1.000000 textures/MTL_02_normal.png
+
+newmtl Sreen_01
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/Sreen_01_baseColor.jpeg
+map_Ke textures/Sreen_01_baseColor.jpeg
+
+newmtl Sreen_02
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/Sreen_02_baseColor.jpeg
+map_Ke textures/Sreen_02_baseColor.jpeg
+
+newmtl screen_04
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_04_baseColor.png
+map_Ke textures/screen_04_baseColor.png
+
+newmtl screen_05
+Ns 338.373322
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/screen_05_baseColor.jpeg
+map_Ke textures/screen_05_baseColor.jpeg
+
+newmtl screen_06
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_06_baseColor.jpeg
+map_Ke textures/screen_06_baseColor.jpeg
+
+newmtl screen_07
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_07_baseColor.png
+map_Ke textures/screen_07_baseColor.png
+
+newmtl screen_08
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_08_baseColor.jpeg
+map_Ke textures/screen_08_baseColor.jpeg
+
+newmtl screen_09
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_09_baseColor.jpeg
+map_Ke textures/screen_09_baseColor.jpeg
+
+newmtl screen_10
+Ns 6.280824
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/screen_10_baseColor.jpeg
+map_Ke textures/screen_10_baseColor.jpeg
+
+newmtl sreen_03
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd textures/sreen_03_baseColor.jpeg
+map_Ke textures/sreen_03_baseColor.jpeg
