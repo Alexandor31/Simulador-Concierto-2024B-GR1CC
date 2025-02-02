@@ -1,0 +1,11 @@
+Model Information:
+* title:	DJ5000
+* source:	https://sketchfab.com/3d-models/dj5000-00615da2444f437da7efa342c05be7ff
+* author:	David Henson (https://sketchfab.com/david.henson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "DJ5000" (https://sketchfab.com/3d-models/dj5000-00615da2444f437da7efa342c05be7ff) by David Henson (https://sketchfab.com/david.henson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
